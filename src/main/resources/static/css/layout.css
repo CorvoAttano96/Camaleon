@@ -1,0 +1,90 @@
+.mi-navbar{
+	border-radius: 0px;
+	margin: 10px 10px 10px 10px;
+	border-style: outset;
+}
+.marco{
+	border: 8px white solid;
+}
+
+#login{
+	background-image: url(../img/login.png);
+}
+
+#register{
+	background-image: url(../img/register.png);
+}
+
+.btn-nav{
+	background-size: contain; 
+	background-repeat: no-repeat;
+	height: 30px;
+	background-color: transparent;
+	border-color:transparent;
+	margin: 6px 10px 1px 1px ;
+	width: 100px;
+	color: black;
+}
+.btn-nav:active{
+  transform: translateY(4px);
+}
+
+.btn-nav-drop{
+	background-size: contain; 
+	background-repeat: no-repeat;
+	height: 30px;
+	background-color: transparent;
+	border-color:transparent;
+	width: 100px;
+	color: black;
+}
+
+.dropdown-custom{
+	min-width: 115px;
+	height: 75px;
+}
+
+/*MediasQuerys*/
+/*Phones*/
+@media (max-width:760px) {
+
+	.navbar-brand{
+		height: 50px;
+		padding: 0px 0px 0px 0px;
+	}
+	.contenido{
+		background-color: white !important;
+	}
+
+}
+/*Tablets*/
+/*@media (min-width: 760px) and (max-width: 991px) {*/
+/*Tablets and Desktop*/	
+@media (min-width: 760px){
+	.navbar-brand{
+		height: 90px;
+	}
+	.contenido{
+		background-image: url(../img/background-navbar.png);
+		background-size:cover;
+		background-repeat: no-repeat;
+	}
+}
+/*Desktop*//*
+@media (min-width: 992px){
+	body{
+		background-image: url(../img/home-background.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 100% 450%;
+	}
+	.navbar-brand{
+		height: 90px;
+	}
+	.contenido{
+		background-image: url(../img/background-navbar.png);
+		background-size:cover;
+		background-repeat: no-repeat;
+	}
+
+}*/

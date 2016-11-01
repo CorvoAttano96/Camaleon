@@ -1,0 +1,146 @@
+.btn-homeactions{
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 60px;
+	background-color: transparent;
+	border-color:transparent;
+	margin: 6px 10px 1px 1px ;
+	width: 200px;
+}
+.btn-homeactions:active{
+  transform: translateY(4px);
+}
+
+.btn-play{
+	background-image: url(../img/play.png);
+}
+.btn-comicoteca{
+	background-image: url(../img/comicoteca.png);
+}
+.btn-map{
+	background-image: url(../img/mapa.png);
+}
+
+/*MediasQuerys*/
+/*Phones*/
+@media (max-width:760px) {
+	body{
+
+	}
+	.row-home{
+		max-width: 760px;
+		max-height: 1280px;
+		margin-left: 1px;
+		/*background-image: url(../img/home-phone.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position:center;*/
+	}
+	.col-home{
+		text-align: center;
+		height: 100px;
+	}
+	.home-phone{
+		max-width: 100%;
+		max-height: 900px;
+		height: 500px;
+		width: 100%;
+		position: absolute;
+	}
+	#col-play{
+		height: 232px;
+	}
+	.white-space1{
+		height: 55px;
+	}
+	.white-space3{
+		height: 45px;
+	}
+
+	.white-space4{
+		height: 20px;
+	}
+
+}
+/*Tablets*/
+/*@media (min-width: 760px) and (max-width: 991px) {*/
+/*Tablets and Desktop*/	
+@media (min-width: 760px){
+	body{
+		background-image: url(../img/home-background1.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	#col-play{
+		/*border: 2px green solid;*/
+		text-align: right;
+	}
+	#col-comicoteca{
+		/*border: 2px green solid;*/
+		text-align: left;
+		padding-left: 0px;
+	}
+	#col-map{
+		/*border: 2px green solid;*/
+		text-align: left;
+		padding-left: 0px;
+	}
+	.btn-play{
+		top: 50%;
+	}
+	.btn-comicoteca{
+		margin: 0px;
+		padding: 0px;
+	}
+	.row-home{
+		max-width: 896px;
+		margin-right: 10px;
+		margin-left: 10px;
+		/*background-image: url(../img/row-background.png);
+		border: 2px red solid;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;*/
+		height: 600px;
+	}
+	.row-image{
+		max-width: 100%;
+		max-height: 600px;
+		position: absolute;
+	}
+	.white-space1{
+		max-height: 700px;
+    	height: 500px;
+	}
+	.white-space2{
+		max-height: 700px;
+		height: 325px;
+	}
+	.white-space3{
+		max-height: 700px;
+		height: 480px;
+	}
+	.body-center{
+		margin: auto;
+		max-width: 913px;
+	}
+}
+/*Desktop*//*
+@media (min-width: 992px){
+	body{
+		background-image: url(../img/home-background.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 100% 450%;
+	}
+	.navbar-brand{
+		height: 90px;
+	}
+	.contenido{
+		background-image: url(../img/background-navbar.png);
+		background-size:cover;
+		background-repeat: no-repeat;
+	}
+
+}*/

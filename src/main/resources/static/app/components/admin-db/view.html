@@ -1,0 +1,63 @@
+
+<link rel="stylesheet" href="css/prueba.css">
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div style="background-color: rgba(54, 25, 25, .6);" class="panel panel-default">
+                <center>
+                    <h1>Articulo</h1>
+                </center>
+                <hr>
+                <form ng-submit="admin.save(trabajo)">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label> Trabajador: </label>
+
+                        </div>
+                        <div class="col-md-8">
+                            <input list="browsers4" ng-model="trabajo.Personal">
+                            <datalist id="browsers4">
+                                <option value="Cristhian">
+                                <option value="Favio">
+                                <option value="Fernando">
+                                <option value="Augusto">
+                                <option value="Mario">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label> PUB: </label>
+
+                        </div>
+                        <div class="col-md-8">
+                            <input list="browsers3" ng-model="trabajo.Pubs">
+                            <datalist id="browsers3">
+                                <option value="Néctar">
+                                <option value="Candy">
+                              </datalist>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label> Puesto: </label>
+
+                        </div>
+                        <div class="col-md-8">
+                            <input list="browsers2" ng-model="trabajo.puesto">
+                            <datalist id="browsers2">
+                                <option value="Camarero">
+                                <option value="Titular">
+                            </datalist>
+                        </div>
+                    </div>
+                    <center>
+                        <button>Agregar</button>
+                    </center>
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

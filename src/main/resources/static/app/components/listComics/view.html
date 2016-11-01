@@ -1,0 +1,51 @@
+
+
+<div class="container lista-margenb">
+    <img style="z-index: 2;position:absolute" class="row-imageb" src="/img/comicotecapc.png" width="380" height="280">
+    <!--<img class="home-phoneb visible-xs" src="/img/comiteca-phone.png">-->
+    <div id="col-buttonb" class="col-xs-3 col-sd-3 col-md-3 col-homeb" >
+        <div class="white-space1b"></div>
+        <a href="/#/listcomic"><button style="z-index: 3;position:absolute" class="btn-comics btn-homeactionsb"></button></a>
+        <a href="#"><button style="z-index: 3;position:absolute; margin-top:60px" class="btn-cards btn-homeactionsb"></button></a>
+        <a href="#"><button style="z-index: 3;position:absolute; margin-top:120px" class="btn-user btn-homeactionsb"></button></a>
+    </div>
+    <div class="lista-margen col-md-6" >
+        <div class="white-space1b"></div>
+        <img src="/img/desbloqueo.png" width="740" height="95">
+        <div class="col-md-6" >
+          <div class="white-space2b"></div>
+          <button class="btn-busqueda btn-homeactionsc"></button>
+          <button class="btn-filtro btn-homeactionsb"></button>
+        </div>
+   </div>
+</div>
+
+
+
+<div class="container lista-margenb">
+  <h2>Accion</h2>
+  <div class="row">
+    <div ng-repeat="comic in listacomic.comics">
+      <div class="col-sm-3 col-md-3">
+        {{comic.name}}
+        <a href="/#/previs/{{comic.id}}" class="thumbnail" >
+          <img width="280px" height="150px" src="{{comic.img}}" alt="..." >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--div ng-repeat="comic in listacomic.comics">
+    <p>{{comic.name}}</p>
+    <p>{{comic.id}}</p>
+    <p>{{comic.photo}}</p>
+    <button ng-click="listacomic.remove(comic.id)">Delete</button>
+</div>
+
+<button ng-click="listacomic.refresh()">Refresh</button>
+
+<form ng-submit="listacomic.save(comic)">
+    <input type="text" ng-model="comic.name">
+    <button>Save</button>
+</form>-->

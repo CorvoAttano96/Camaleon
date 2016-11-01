@@ -1,0 +1,64 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<div class="container text-center">
+<hr>
+<h1 class="monserrat">Consulta 1</h1>
+<label class="roboto"> Personal camarero en el pubs: </label>
+
+<input id="idP" list="browsers">
+<datalist id="browsers">
+    <option value="Néctar">
+    <option value="La Barra">
+</datalist>
+
+<button class="btn btn-info monserrat" ng-click="home.refresh1()">Resultado</button>
+<div class="roboto text-center col-md-8" ng-repeat="pers in home.personalxpub">
+    <table>
+        <tr><td> Nombre </td><td> Direccion </td></tr>
+        <tr><td> {{pers.nombre}} </td><td> {{pers.direccion}} </td></tr>
+    </table>
+</div>
+<hr>
+<h1 class="monserrat">Consulta 2</h1>
+<label class="roboto"> Proveedores del pub x del articulo x </label><br>
+<label class="roboto">pub </label>
+
+<input id="idPub" list="browsers1">
+<datalist id="browsers1">
+    <option value="Néctar">
+    <option value="Candy">
+    <option value="La Barra">
+</datalist>
+<label class="roboto">articulo</label>
+
+<input id="idArt" list="browsers4">
+<datalist id="browsers4">
+    <option value="Jugo-de-naranja">
+    <option value="Jugo-de-manzana">
+    <option value="Jugo-de-uva">
+</datalist>
+
+<button class="btn btn-info monserrat" ng-click="home.refresh2()">Resultado</button>
+<div ng-repeat="pers in home.prov">-{{pers.nombre}}</div>
+<hr>
+<h1 class="monserrat">Consulta 3</h1>
+<label class="roboto"> Pubs con recaudaciones en el dia x </label>
+<label> Recaudacion > </label>
+<input id="idMonto" list="browsers2">
+<datalist id="browsers2">
+    <option value="10000">
+    <option value="100000">
+    <option value="110000">
+</datalist>
+
+<label class="roboto">Fecha</label>
+
+<input id="idFecha" list="browsers3">
+<datalist id="browsers3">
+    <option value="20-07-2013">
+</datalist>
+<button class="btn btn-info monserrat" ng-click="home.refresh3()">Resultado</button>
+<div ng-repeat="pers in home.pubs">-{{pers.nombre}}</div>
+
+</div>

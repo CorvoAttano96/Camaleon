@@ -1,0 +1,220 @@
+.lista-margen{
+	margin-left: 160px ;
+	margin-top: 15px;
+}
+
+.lista-margenb{
+	margin-left: 60px;
+}
+
+.btn-homeactionsb{
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 40px;
+	background-color: transparent;
+	border-color:transparent;
+	margin: 9px 10px 1px 10px ;
+	width: 170px;
+}
+
+.btn-homeactionsc{
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 40px;
+	background-color: transparent;
+	border-color:transparent;
+	margin: 9px 10px 1px 10px ;
+	width: 260px;
+}
+
+
+.btn-homeactionsb:active{
+  transform: translateY(4px);
+}
+
+
+/*Vista Comicoteca*/
+.btn-comics{
+	background-image: url(../img/comicsbutton1.png);
+	max-width: 170px;
+	max-height: 40px;
+}
+.btn-cards{
+	background-image: url(../img/cardsbutton1.png);
+	max-width: 170px;
+	max-height: 40px;
+}
+.btn-user{
+	background-image: url(../img/userbutton1.png);
+	max-width: 170px;
+	max-height: 40px;
+	margin-bottom: 30px;
+}
+
+.btn-desbloqueo{
+	background-image: url(../img/desbloqueo.png);
+	max-width: 800px;
+	max-height: 910px;
+	margin-bottom: 5px;
+	margin-left: 120px;
+	/*margin-top: 500px;*/
+}
+
+.btn-busqueda{
+	background-image: url(../img/busqueda.png);
+	width: 260px;
+	max-height: 30px;
+	margin-bottom: 5px;
+	margin-left: 30px;
+}
+
+.btn-filtro{
+	background-image: url(../img/filtro.png);
+	max-width: 150px;
+	max-height: 30px;
+	margin-bottom: 5px;
+	margin-left: 30px;
+}
+
+
+/*MediasQuerys*/
+/*Phones*/
+@media (max-width:760px) {
+	body{
+
+	}
+	.row-homeb{
+		max-width: 760px;
+		max-height: 1280px;
+		margin-left: 1px;
+		/*background-image: url(../img/home-phone.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position:center;*/
+	}
+	.col-homeb{
+		text-align: center;
+		height: 100px;
+	}
+	.home-phoneb{
+		max-width: 100%;
+		max-height: 900px;
+		height: 500px;
+		width: 100%;
+		position: absolute;
+	}
+	#col-buttonb{
+		height: 232px;
+	}
+	.white-space1b{
+		height: 150px;
+	}
+	.white-space2b{
+		height: 5px;
+	}
+
+}
+
+
+
+/*Tablets*/
+/*@media (min-width: 760px) and (max-width: 991px) {*/
+/*Tablets and Desktop*/	
+@media (min-width: 760px){
+	body{
+		background-image: url(../img/home-background1.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+	}
+
+	#col-buttonb{
+		/*border: 2px green solid;*/
+		text-align: left;
+	}
+
+	#col-buttonc{
+		/*border: 2px green solid;*/
+		text-align: right;
+		margin-left: 150px;
+
+	}
+
+
+	.btn-comicoteca{
+		margin: 0px;
+		padding: 0px;
+	}
+	.row-homeb{
+		max-width: 896px;
+		margin-right: 10px;
+		margin-left: 80px;
+		/*background-image: url(../img/row-background.png);
+		border: 2px red solid;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;*/
+		height: 300px;
+	}
+
+	.row-homec{
+		max-width: 896px;
+		margin-right: 10px;
+		margin-left: 0px;
+		/*background-image: url(../img/row-background.png);
+		border: 2px red solid;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;*/
+		height: 150px;
+	}
+
+	.row-imageb{
+		max-width: 100%;
+		max-height: 600px;
+		position: absolute;
+	}
+
+	.row-imagec{
+		max-width: 100%;
+		max-height: 300px;
+		margin-left: 0px ;
+		margin-top: 100px;
+		/*margin-top: -300px;*/
+		
+	}
+
+	.white-space1b{
+		max-height: 80px;
+    	height: 500px;
+	}
+
+	.white-space2b{
+		max-height: 500px;
+    	height: 10px;
+	}
+
+	.body-centerb{
+		margin: auto;
+		max-width: 913px;
+	}
+}
+/*Desktop*//*
+@media (min-width: 992px){
+	body{
+		background-image: url(../img/home-background.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-size: 100% 450%;
+	}
+	.navbar-brand{
+		height: 90px;
+	}
+	.contenido{
+		background-image: url(../img/background-navbar.png);
+		background-size:cover;
+		background-repeat: no-repeat;
+	}
+
+}*/
+

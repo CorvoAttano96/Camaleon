@@ -1,0 +1,11 @@
+label {
+margin-left:20px;
+}
+.monserrat{
+    font-family: 'Montserrat', sans-serif;}
+.roboto{
+    font-family: 'Roboto', sans-serif;}
+
+body{
+    background:url(../back.png);
+ }
