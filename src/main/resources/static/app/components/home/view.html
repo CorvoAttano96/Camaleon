@@ -13,11 +13,7 @@
 </datalist>
 
 <button class="btn btn-info monserrat" ng-click="home.refresh1()">Resultado</button>
-<div class="roboto text-center col-md-8" ng-repeat="pers in home.personalxpub">
-    <table>
-        <tr><td> Nombre </td><td> Direccion </td></tr>
-        <tr><td> {{pers.nombre}} </td><td> {{pers.direccion}} </td></tr>
-    </table>
+<div class="roboto" ng-repeat="pers in home.personalxpub">Nombre: {{pers.nombre}} Direccion: {{pers.direccion}}
 </div>
 <hr>
 <h1 class="monserrat">Consulta 2</h1>
@@ -40,7 +36,7 @@
 </datalist>
 
 <button class="btn btn-info monserrat" ng-click="home.refresh2()">Resultado</button>
-<div ng-repeat="pers in home.prov">-{{pers.nombre}}</div>
+<div ng-repeat="pers in home.prov">{{pers.nombre}}</div>
 <hr>
 <h1 class="monserrat">Consulta 3</h1>
 <label class="roboto"> Pubs con recaudaciones en el dia x </label>
@@ -59,6 +55,6 @@
     <option value="20-07-2013">
 </datalist>
 <button class="btn btn-info monserrat" ng-click="home.refresh3()">Resultado</button>
-<div ng-repeat="pers in home.pubs">-{{pers.nombre}}</div>
+<div ng-repeat="pers in home.pubs">{{pers.nombre}}</div>
 
 </div>
